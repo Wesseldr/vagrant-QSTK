@@ -1,4 +1,4 @@
-# Vagrant QuantSoftware ToolKit DESKTOP ON UBUNTU 14.x #
+# Vagrant QuantSoftware ToolKit Desktop on Ubuntu 14.x#
 
 This Vagrant box sets up a fully QuantSoftware ToolKit Ubuntu installation inside a VirtualMachine.
 All credits for QuantSoftware Toolkit goes to the team of [QSTK](http://wiki.quantsoftware.org/index.php?title=QuantSoftware_ToolKit), 
@@ -23,7 +23,6 @@ If you like to run this Vagrant box on Microsoft (which is no problem) please re
 2. Clone this repository, and inside run the command: 
 
 ```
-#!bash
 
 $ vagrant up
 ```
@@ -34,7 +33,6 @@ Vagrant will start by installing a vanilla Ubuntu 14.04 inside the VM. It will b
 3. Be patient it takes a long time before it all is completed. (on my slow internet almost 50 minutes)
 If the full installation was successful you will see the following screen on your terminal:
 ```
-#!
 ==> default: Notice: Finished catalog run in 3000 seconds
 ==> default: =================================================================
 ==> default: || Puppet Applied! Installation and box Configuration Finished ||
@@ -63,7 +61,6 @@ Scroll back the screen and check if no errors occurred.
 
 Start a terminal and type:
 ```
-#!bash
 
 ipython notebook
 ```

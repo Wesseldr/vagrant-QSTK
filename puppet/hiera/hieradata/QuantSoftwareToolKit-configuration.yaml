@@ -1,0 +1,81 @@
+---
+#
+# Full configuration of the QuantSoftware ToolKit installation is done here
+#
+#
+# Created by Wessel de Roode, please use as you like :)
+#
+
+# Set the system time zone
+timezone::timezone: ['Europe/Amsterdam']
+
+#python basic setup with pip, dev, virtualenv and gunicorn
+qstk::version: system
+qstk::pip: true
+qstk::dev: true
+qstk::virtualenv: true
+qstk::gunicorn: true
+
+# Set the desktop GUI. This is required for matplotlib!!!        
+qstk::desktop: 
+        - ubuntu-desktop
+        - gnome-terminal
+        - firefox
+        - chromium-browser
+        - vim-gnome
+        - geany
+        - meld
+
+qstk::desktop_minimal_install: true
+
+# Set Binary Packages needed as source for python packages
+qstk::binaryPackages: 
+        - build-essential 
+        - python2.7-dev
+        - liblapack-dev  
+        - libblas-dev 
+        - libatlas-base-dev 
+        - gfortran 
+        - libpng-dev 
+        - libjpeg8-dev 
+        - libfreetype6-dev 
+        - libzmq-dev
+        - libxslt-dev
+        - quantlib-python
+        - python-numpy
+        - python-scipy
+        - python-matplotlib
+        - python-setuptools
+        - python-cvxopt
+        - unzip
+# Python packages        
+qstk::pythonPackages:
+        - numpy
+        - scipy
+        - matplotlib
+        - pandas
+        - python-dateutil
+        - cvxopt
+        - scikits.statsmodels
+        - scikit-learn
+        - pyzmq
+        - ipython
+        - pygments
+        - patsy
+        - statsmodels
+        - lxml
+        - qstk
+
+# Additional Packages for GUI or Commandline
+qstk::extraPackages:
+        - screen
+
+###################################
+# Do not edit below this line!!!! #
+# #################################
+
+# Set all the puppet classes to run through
+classes: 
+        - timezone
+        - qstk
+

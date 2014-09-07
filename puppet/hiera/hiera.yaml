@@ -1,0 +1,13 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - "QuantSoftwareToolKit-configuration"
+
+:yaml:
+  :datadir: '/etc/puppet/hieradata'
+
+:logger: console
+
+# Inactive Hiera file, needs more working on for now just an example dummy and incativated in Vragrantfile
