@@ -5,11 +5,11 @@ It can be both used as a Gnome desktop or through CLI.
 
 *DISCLAIMER*
 All credits for QuantSoftware Toolkit goes to the team of [QSTK](http://wiki.quantsoftware.org/index.php?title=QuantSoftware_ToolKit), 
-Here we just build a complete VirtualMachine around it so it can be easily used on 'any' os as long as it supports the free software VirtualBox from Oracle
+Here we just build a complete VirtualMachine around it so it can be easily used on 'any' os as long as it supports the free software VirtualBox from Oracle and the opensource tool Vagrant
 
 Also the [ipython notebook application](http://ipython.org/notebook.html) is installed for easy usages of python code snippets.
 
-BE PATIENT! It takes a long time to install all the dependency, the good news is you don't need to do anything but wait and no changes are made to your installation since everything is run inside a VM
+BE PATIENT! It takes a long time to install all the dependency, the good news is you don't need to do anything but wait. No changes are made to your local python installation since everything is run inside a VM
 
 
 ### Requirements ###
@@ -38,6 +38,12 @@ Vagrant will start by installing a vanilla Ubuntu 14.04 inside the VM. It will b
 3. Be patient it takes a long time before it all is completed. (on my slow internet almost 50 minutes)
 If the full installation was successful you will see the following screen on your terminal:
 ```
+==> default: Close price of MSFT on 2012/2/15 is :  29.66
+==> default: Data looks correct as the close price in default data is 29.66
+==> default: 
+==> default: Everything works fine: You're all set.
+==> default:  
+
 ==> default: Notice: Finished catalog run in 3000 seconds
 ==> default: =================================================================
 ==> default: || Puppet Applied! Installation and box Configuration Finished ||
