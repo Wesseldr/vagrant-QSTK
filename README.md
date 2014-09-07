@@ -44,13 +44,6 @@ If the full installation was successful you will see the following screen on you
 ==> default: Everything works fine: You're all set.
 ==> default:  
 
-==> default: Notice: Finished catalog run in 3000 seconds
-==> default: =================================================================
-==> default: || Puppet Applied! Installation and box Configuration Finished ||
-==> default: =================================================================
-==> default:  
-==> default:  
-==> default:  
 ==> default: You find your host ./ directory inside the VM at /vagrant, and it is always in sync
 ==> default: Use it with your native editor to work on your projects
 ==> default:  
@@ -92,12 +85,6 @@ vagrant ssh
 #QSTK Examples & Validation.py script#
 Can be found in: ./QSTK/QSTK-0.2.8/Examples/
 
-
-Now you can test and run any code snippets on the QSTK pages.
-
-
-
-
 ## Customise the installation ##
 Feel free to fork me and change :)
 
@@ -105,21 +92,17 @@ Feel free to fork me and change :)
 All the configuration variables are placed inside the hiera file:
 
 ```
-#!bash
-
 /vagrant/puppet/hiera/hieradata/quantstart-configuration.yaml
 ```
 To apply new settings just run the script:
 
 ```
-#!bash
 
 $ sudo ./apply_puppet.sh
 ```
 
 The Ubuntu desktop tweaks:
 ```
-#!bash
 
 /vagrant/puppet/manifests/files/scripts/desktop-setup/desktop-setup.sh
 ```
@@ -136,7 +119,7 @@ Below are the different packages used in this Vagrant box:
         - scikits.statsmodels
         - scikit-learn
         - pyzmq
-        - ipython
+        - ipython[notebook]
         - pygments
         - patsy
         - statsmodels
