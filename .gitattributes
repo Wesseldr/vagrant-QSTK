@@ -1,0 +1,8 @@
+*.sh eol=lf
+*.bash eol=lf
+*.pp eol=lf
+*.conf eol=lf
+*.pl eol=lf
+*.bash eol=lf
+*.ini eol=lf
+
