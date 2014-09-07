@@ -158,5 +158,5 @@ Below are the different packages used in this Vagrant box:
 
 Enjoy! 
 
-J.W. de Roode, sep-2014
+Wesseldr, sep-2014
 
