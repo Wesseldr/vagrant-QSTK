@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      vb.gui = true
 
      # Use VBoxManage to customize the VM. For example to change memory:
-     vb.name = "Quantitative Research"
+     vb.name = "Vagrant QuantSoftware ToolKit Desktop"
      vb.customize ["modifyvm", :id,
         "--memory", "2048",
 	"--vram", "256",

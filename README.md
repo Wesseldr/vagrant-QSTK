@@ -1,6 +1,6 @@
 # Vagrant QuantSoftware ToolKit Desktop on Ubuntu 14.x#
 
-This Vagrant box sets up a fully QuantSoftware ToolKit Ubuntu installation inside a VirtualMachine.
+This Vagrant box sets up a full QuantSoftware ToolKit Ubuntu installation inside a VirtualMachine with Gnome desktop.
 All credits for QuantSoftware Toolkit goes to the team of [QSTK](http://wiki.quantsoftware.org/index.php?title=QuantSoftware_ToolKit), 
 Here we just build a complete VirtualMachine around it so it can be easily used on 'any' os as long as it supports the free software VirtualBox from Oracle
 
@@ -59,13 +59,23 @@ If the full installation was successful you will see the following screen on you
 ```
 Scroll back the screen and check if no errors occurred.
 
-Start a terminal and type:
+Start a terminal on the Linux desktop and type:
 ```
+ipython notebook 
 
-ipython notebook
+# or if you like to access notebook from outside the VM:
+ipython notebook --ip='*'
+
 ```
+use the url [http://10.11.12.13:8888/](http://10.11.12.13:8888/) from your own desktop to reach the VM.
+
+yes the correct ip is 10.11.12.13, VirtualBox will handle the routing :-)
+
+
 
 Now you can test and run any code snippets on the QSTK pages.
+
+
 
 
 ## Customise the installation ##
@@ -143,6 +153,7 @@ Below are the different packages used in this Vagrant box:
         - geany
         - meld
 
-Enjoy! Feel free to fork and alter me..
+Enjoy! 
+
 J.W. de Roode, sep-2014
 
