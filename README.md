@@ -84,7 +84,7 @@ vagrant ssh
 
 
 #QSTK Examples & Validation.py script#
-Can be found in: ./QSTK/Examples
+Can be found in: ./QSTK/QSTK-0.2.8/Examples/
 
 
 Now you can test and run any code snippets on the QSTK pages.
