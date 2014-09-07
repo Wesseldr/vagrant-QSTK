@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# (c) Wessel de Roode, 2014
+# (c) WesseldR, 2014
 # Easy to reuse commandline for applying the full puppet cycle. Use for changes and for initial instalation
 #
 echo " "
