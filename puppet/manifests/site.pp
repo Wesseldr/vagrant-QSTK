@@ -1,6 +1,6 @@
 #
 # Puppet Vagrant File for creating a full Python development environment
-# (c) Wessel de Roode, 2014
+# (c) WesseldR, 2014
 #
 #
 

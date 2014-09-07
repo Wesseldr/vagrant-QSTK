@@ -5,11 +5,11 @@ It can be both used as a Gnome desktop or through CLI.
 
 *DISCLAIMER*
 All credits for QuantSoftware Toolkit goes to the team of [QSTK](http://wiki.quantsoftware.org/index.php?title=QuantSoftware_ToolKit), 
-Here we just build a complete VirtualMachine around it so it can be easily used on 'any' os as long as it supports the free software VirtualBox from Oracle
+Here we just build a complete VirtualMachine around it so it can be easily used on 'any' os as long as it supports the free software VirtualBox from Oracle and the opensource tool Vagrant
 
 Also the [ipython notebook application](http://ipython.org/notebook.html) is installed for easy usages of python code snippets.
 
-BE PATIENT! It takes a long time to install all the dependency, the good news is you don't need to do anything but wait and no changes are made to your installation since everything is run inside a VM
+BE PATIENT! It takes a long time to install all the dependency, the good news is you don't need to do anything but wait. No changes are made to your local python installation since everything is run inside a VM
 
 
 ### Requirements ###
@@ -38,13 +38,12 @@ Vagrant will start by installing a vanilla Ubuntu 14.04 inside the VM. It will b
 3. Be patient it takes a long time before it all is completed. (on my slow internet almost 50 minutes)
 If the full installation was successful you will see the following screen on your terminal:
 ```
-==> default: Notice: Finished catalog run in 3000 seconds
-==> default: =================================================================
-==> default: || Puppet Applied! Installation and box Configuration Finished ||
-==> default: =================================================================
+==> default: Close price of MSFT on 2012/2/15 is :  29.66
+==> default: Data looks correct as the close price in default data is 29.66
+==> default: 
+==> default: Everything works fine: You're all set.
 ==> default:  
-==> default:  
-==> default:  
+
 ==> default: You find your host ./ directory inside the VM at /vagrant, and it is always in sync
 ==> default: Use it with your native editor to work on your projects
 ==> default:  
@@ -84,13 +83,7 @@ vagrant ssh
 
 
 #QSTK Examples & Validation.py script#
-Can be found in: ./QSTK/Examples
-
-
-Now you can test and run any code snippets on the QSTK pages.
-
-
-
+Can be found in: ./QSTK/QSTK-0.2.8/Examples/
 
 ## Customise the installation ##
 Feel free to fork me and change :)
@@ -99,21 +92,17 @@ Feel free to fork me and change :)
 All the configuration variables are placed inside the hiera file:
 
 ```
-#!bash
-
 /vagrant/puppet/hiera/hieradata/quantstart-configuration.yaml
 ```
 To apply new settings just run the script:
 
 ```
-#!bash
 
 $ sudo ./apply_puppet.sh
 ```
 
 The Ubuntu desktop tweaks:
 ```
-#!bash
 
 /vagrant/puppet/manifests/files/scripts/desktop-setup/desktop-setup.sh
 ```
@@ -130,7 +119,7 @@ Below are the different packages used in this Vagrant box:
         - scikits.statsmodels
         - scikit-learn
         - pyzmq
-        - ipython
+        - ipython[notebook]
         - pygments
         - patsy
         - statsmodels
@@ -169,5 +158,5 @@ Below are the different packages used in this Vagrant box:
 
 Enjoy! 
 
-J.W. de Roode, sep-2014
+Wesseldr, sep-2014
 

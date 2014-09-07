@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Script to set the default Launcher icons
-# (c) Wessel de Roode, 2014
+# (c) WesseldR, 2014
 
 . ./discover_session_bus_address.sh unity
 
