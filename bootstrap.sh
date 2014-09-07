@@ -88,6 +88,13 @@ pip install ipython[notebook]
 aptitude -y build-dep python-cvxopt
 aptitude -y install python-cvxopt
 
+mkdir QSTK
+cd QSTK
+wget –quiet http://pypi.python.org/packages/source/Q/QSTK/QSTK-0.2.8.tar.gz  > /dev/null 2>&1
+sudo tar zxvf QSTK-0.2.8.tar.gz --owner vagrant --group vagrant --no-same-owner 2>&1 > tar2.log
+cd QSTK-0.2.8/Examples/
+python Validation.py
+
 echo " "
 echo " "
 echo "You find your host ./ directory inside the VM at /vagrant, and it is always in sync"
