@@ -9,6 +9,7 @@
 # After how long are we going to lock the desktop 0 means never
 #
 gsettings set org.gnome.desktop.session idle-delay 0
+gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 #
 # Setup the quick launch 
