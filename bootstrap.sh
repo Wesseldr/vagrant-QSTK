@@ -95,6 +95,10 @@ sudo tar zxvf QSTK-0.2.8.tar.gz --owner vagrant --group vagrant --no-same-owner 
 cd QSTK-0.2.8/Examples/
 python Validation.py
 
+
+# Cleanup the testing enviroment
+rm -rf /tmp/QSScratch
+
 echo " "
 echo " "
 echo "You find your host ./ directory inside the VM at /vagrant, and it is always in sync"
